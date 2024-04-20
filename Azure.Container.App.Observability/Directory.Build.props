@@ -1,0 +1,13 @@
+﻿<Project>
+	<PropertyGroup Label="SDK Versions">
+		<NetCoreTargetVersion>net8.0</NetCoreTargetVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Package information">
+		<Authors>JCP</Authors>
+		<Company>JCP</Company>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>true</AllowedOutputExtensionsInPackageBuildOutputFolder>
+	</PropertyGroup>
+
+</Project>

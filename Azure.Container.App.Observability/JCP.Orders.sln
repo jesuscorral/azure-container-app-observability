@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JCP.Orders.Host", "src\JCP.Orders.Host\JCP.Orders.Host.csproj", "{C279F636-68FE-4FDA-B2AB-CE5FB4CB0D22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0D81485-D1D0-45F2-8317-31AFFBFECF72}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C279F636-68FE-4FDA-B2AB-CE5FB4CB0D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C279F636-68FE-4FDA-B2AB-CE5FB4CB0D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C279F636-68FE-4FDA-B2AB-CE5FB4CB0D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C279F636-68FE-4FDA-B2AB-CE5FB4CB0D22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDE8BCBF-924C-4C59-B939-6E41784177CC}
+	EndGlobalSection
+EndGlobal

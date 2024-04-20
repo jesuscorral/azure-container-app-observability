@@ -1,0 +1,6 @@
+@JCP.Orders.Host_HostAddress = https://localhost:32769
+
+GET {{JCP.Orders.Host_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
