@@ -1,3 +1,4 @@
+using JCP.Orders.Host.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JCP.Orders.Host.Controllers
@@ -11,16 +12,20 @@ namespace JCP.Orders.Host.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly HostDiagnostics _diagnostics;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(HostDiagnostics diagnostics)
         {
-            _logger = logger;
+            _diagnostics = diagnostics ?? throw new ArgumentNullException(nameof(diagnostics));
         }
+
+
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            _diagnostics.OnGetWeatherForecast("Weather forecast data");
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
